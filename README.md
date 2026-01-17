@@ -45,13 +45,15 @@ This will generate the `pscan` executable in the build/ directory.
 ```bash
 ./pscan <target_host> <flag>
 ```
+**Note:** Because this project is running in a devcontainer, if you want to get your localhost machine you need to put `host.docker.internal` as the host.  
+
 Example:
 ```bash
-./pscan 127.0.0.1 -s
+./pscan host.docker.internal -s
 ```
 Example output:
 ```perl
-===== Open Ports on 127.0.0.1 =====
+===== Open Ports on host.docker.internal =====
 PORT     STATE    SERVICE
 135/tcp  open     msrpc                 # epmap | Microsoft RPC services | DCE endpoint resolution
 445/tcp  open     microsoft-ds          # SMB directly over IP
