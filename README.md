@@ -1,2 +1,2 @@
-#PScan - Multi-threaded Port Scanner
+# PScan - Multi-threaded Port Scanner
 PScan is a lightweight, multi-threaded TCP port scanner written in C++, inspired by Nmap. It can identify open ports on a target host and map them to well-known services using the official `nmap-services` database. Optional service comments are also displayed.
